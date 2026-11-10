@@ -30,12 +30,12 @@ $result = $conn->query($query);
         }
         #map {
             width: 50%;
-            height: 500px;
+            height: 800px;
             border: 1px solid #ccc;
         }
         .table-container {
             width: 50%;
-            height: 500px;
+            height: 800px;
             overflow: auto;
         }
         table {
@@ -72,7 +72,7 @@ $result = $conn->query($query);
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th> <!-- Diubah dari No ke ID -->
+                        <th>ID</th>
                         <th>Nama Sekolah</th>
                         <th>NPSN</th>
                         <th>Status</th>
@@ -118,7 +118,7 @@ $result = $conn->query($query);
                             ];
                     ?>
                     <tr>
-                        <td style="text-align: center;"><?= $id; ?></td> <!-- Menampilkan ID asli dari Database -->
+                        <td style="text-align: center;"><?= $id; ?></td> 
                         <td><b><?= htmlspecialchars($nama); ?></b></td>
                         <td><?= htmlspecialchars($npsn); ?></td>
                         <td><?= htmlspecialchars($status); ?></td>
